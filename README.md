@@ -64,7 +64,10 @@ After we published code, Ethereum contract will match the code to registered nod
 <img src="img/contract_match.png" width="788px"/>
 </div>
 
-On receiving an event, nodes will run real-time nodes in docker containers.
+
+Event contains addresses and ports of all four future cluster members. On receiving an event, nodes will run real-time nodes in docker containers, specifying peers in the configuration files. Note that all containers are running on the host, there is no Docker-in-Docker here.
+
+
 <div style="text-align:center">
 <img src="img/cluster_creation.png" width="766px"/>
 </div>
