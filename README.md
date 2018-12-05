@@ -1,3 +1,16 @@
+- [Fluence Demo: December 2018](#fluence-demo-december-2018)
+    - [Prerequisites](#prerequisites)
+    - [Scenario](#scenario)
+        - [Clone repo](#clone-repo)
+        - [Run Ethereum blockchain](#run-ethereum-blockchain)
+        - [Run Swarm & 4 Fluence nodes](#run-swarm--4-fluence-nodes)
+        - [Publish WASM code to Ethereum contract](#publish-wasm-code-to-ethereum-contract)
+        - [Formation of the real-time cluster](#formation-of-the-real-time-cluster)
+            - [Emitting the event](#emitting-the-event)
+        - [Web application](#web-application)
+        
+[![Join the chat at https://gitter.im/fluencelabs/workshop](https://badges.gitter.im/fluencelabs/workshop.svg)](https://gitter.im/fluencelabs/workshop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Fluence Demo: December 2018
 This demo will allow you to play with Fluence Nodes and Real-Time Clusters. You will run Fluence from scratch, manage it through Ethereum smart contract, create real-time clusters with decentralized database written in Rust, and use it through HTTP API with a simple web application.
 
