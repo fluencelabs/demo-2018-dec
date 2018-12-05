@@ -123,3 +123,16 @@ Wait for the result in the `Result` block:
 You can see logs of what's happening in the web console:
   
 <img src="img/console_block.png" width="1065"/>
+
+### Cleaning the data
+To clean containers and related volumes, run
+```
+docker ps -a | awk '{print $1}' | xargs docker rm -f ; docker volume prune -f
+```
+
+To stop Ganache, run
+```
+pkill -f ganache
+```
+
+And that's it.
