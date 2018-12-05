@@ -17,7 +17,7 @@ This demo will allow you to play with Fluence Nodes and Real-Time Clusters. You 
 ## Prerequisites
 You will need installed `Docker` and `npm`.
 
-**NOTE:** this _`docker-compose.yml` works only on macOS. If you would like to run it on other OS, you will need to change `host.docker.internal` to respective IP addresses._
+**NOTE:** this _`docker-compose.yml` and `fluence-cli` work only on macOS. If you would like to run it on other OS, you will need to change `host.docker.internal` to respective IP addresses in `docker-compose.yml` and [build CLI for you OS](https://github.com/fluencelabs/fluence/tree/master/cli)._
 
 ## Scenario
 ### Clone repo
@@ -101,3 +101,25 @@ You may take a look at real-time node's logs `docker logs 01_node2`. Look for `h
 ### Web application
 Now let's run a simple web application which will connect to real-time cluster through [Javascript Fluence library](https://github.com/fluencelabs/fluence/tree/master/js-client). Go to `sql-client` and open `index.html` in a web browser.
 
+You will see real-time nodes' statuses on the left:
+<div style="text-align:left">
+<br>
+<img src="img/web_status.png" width="357px"/>
+<br><br><br>
+</div>
+
+Copy all queries from the `Example queries` block to the `Type queries` block:
+  
+<img src="img/tips_block.png" width="600"/>
+
+Push the `Submit query` button:
+  
+<img src="img/queries_block.png" width="600"/>
+
+Wait for the result in the `Result` block:
+  
+<img src="img/results_block.png" width="600"/>
+
+You can see logs of what's happening in the web console:
+  
+<img src="img/console_block.png" width="1065"/>
