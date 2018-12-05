@@ -41,13 +41,17 @@ You can check out running containers by running `docker ps` in terminal. Also, i
 
 On start, nodes will register themselves in Ethereum contract at address `0x9995882876ae612bfd829498ccd73dd962ec950a`, signaling ready to get some work. See image below.
 <div style="text-align:center">
+<br><br><br>
 <img src="img/master_node_registration.png" width="764px"/>
+<br><br><br>
 </div>
 
 To give these nodes work, we'll take (llamadb)[https://github.com/nukep/llamadb/], a database written in Rust, compiled to WebAssembly, and upload it to Swarm. Resulting address should be sent to Ethereum contract along with the cluster size we wish to be serving our code. 
 
 <div style="text-align:center">
+<br><br><br>
 <img src="img/cli_swarm_contract.png" width="665px"/>
+<br><br><br>
 </div>
 
 We'll use [Fluence CLI](https://github.com/fluencelabs/fluence/tree/master/cli) for that:
@@ -61,7 +65,9 @@ You may take a look at `fluence-cli publish --help` to get the idea of how to us
 After we published code, Ethereum contract will match the code to registered nodes and emit an event singaling them to form real-time cluster.
 
 <div style="text-align:center">
+<br><br><br>
 <img src="img/contract_match.png" width="788px"/>
+<br><br><br>
 </div>
 
 
@@ -69,7 +75,9 @@ Event contains addresses and ports of all four future cluster members. On receiv
 
 
 <div style="text-align:center">
+<br><br><br>
 <img src="img/cluster_creation.png" width="766px"/>
+<br><br><br>
 </div>
 
 You may take a look at real-time node's logs `docker logs --follow 01_node2`. Look for `height=2`, that means that Tendermint produced 2 initial blocks and cluster is ready to receive transactions.
