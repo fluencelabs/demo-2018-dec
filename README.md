@@ -7,7 +7,7 @@
     - [Publish WASM code to Ethereum contract](#publish-wasm-code-to-ethereum-contract)
     - [Formation of the real-time cluster](#formation-of-the-real-time-cluster)
         - [Emitting the event](#emitting-the-event)
-    - [Web application](#web-application)
+    - [Try web application](#web-application)
         
 [![Join the chat at https://gitter.im/fluencelabs/workshop](https://badges.gitter.im/fluencelabs/workshop.svg)](https://gitter.im/fluencelabs/workshop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -98,7 +98,7 @@ Event contains addresses and ports of all four future cluster members. On receiv
 
 You may take a look at real-time node's logs `docker logs 01_node2`. Look for `height=2`, that means that Tendermint produced 2 initial blocks and cluster is ready to receive transactions.
 
-### Web application
+### Try web application
 Now let's run a simple web application which will connect to real-time cluster through [Javascript Fluence library](https://github.com/fluencelabs/fluence/tree/master/js-client). Go to `sql-client` and open `index.html` in a web browser.
 
 You will see real-time nodes' statuses on the left:
