@@ -130,6 +130,11 @@ To clean containers and related volumes, run
 docker ps -a | awk '{print $1}' | xargs docker rm -f ; docker volume prune -f
 ```
 
+To remove all `docker-compose` related data, run
+```
+docker-compose kill
+```
+
 To stop Ganache, run
 ```
 pkill -f ganache
