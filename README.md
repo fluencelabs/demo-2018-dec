@@ -7,7 +7,7 @@
     - [Publish WASM code to Ethereum contract](#publish-wasm-code-to-ethereum-contract)
     - [Formation of the real-time cluster](#formation-of-the-real-time-cluster)
         - [Emitting the event](#emitting-the-event)
-    - [Try web application](#web-application)
+    - [Try web application](#try-web-application)
         
 [![Join the chat at https://gitter.im/fluencelabs/workshop](https://badges.gitter.im/fluencelabs/workshop.svg)](https://gitter.im/fluencelabs/workshop?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
