@@ -56,7 +56,7 @@ To give these nodes work, we'll take [llamadb](https://github.com/nukep/llamadb/
 We'll use [Fluence CLI](https://github.com/fluencelabs/fluence/tree/master/cli) for that:
 ```
 # while in repository root directory
-./fluence-cli publish llama_db.wasm 0x9995882876ae612bfd829498ccd73dd962ec950a 0x4180fc65d613ba7e1a385181a219f1dbfe7bf11d -cluster_size 4
+./fluence-cli publish llama_db.wasm 0x9995882876ae612bfd829498ccd73dd962ec950a 0x4180fc65d613ba7e1a385181a219f1dbfe7bf11d --cluster_size 4
 ```
 
 You may take a look at `./fluence-cli publish --help` to get the idea of how to use it.
